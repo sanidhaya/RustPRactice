@@ -1,4 +1,4 @@
-use serde::{Deserialize,Deserialize};
+use serde::{Serialize,Deserialize};
 
 #[derive(Serialize, Deserialize)]
 struct Paragraph{
@@ -19,13 +19,13 @@ fn main() {
         paragraph : vec![
             Paragraph{
                 name : "name1".to_owned()
-            }
+            },
             Paragraph{
                 name : "name2".to_owned()
-            }
+            },
             Paragraph{
                 name : "name3".to_owned()
-            }
+            },
         ]
     };
 
